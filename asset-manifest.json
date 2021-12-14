@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/star-wars-map/static/css/main.e6c13ad2.css",
+    "main.js": "/star-wars-map/static/js/main.65c537a2.js",
+    "static/js/787.a10523bc.chunk.js": "/star-wars-map/static/js/787.a10523bc.chunk.js",
+    "static/media/Naboo.gif": "/star-wars-map/static/media/Naboo.ef0a5a368046993a05a0.gif",
+    "static/media/YavinIV.gif": "/star-wars-map/static/media/YavinIV.f11e42e6e4025cc66176.gif",
+    "static/media/Mygeeto.gif": "/star-wars-map/static/media/Mygeeto.199192db82a15abf5920.gif",
+    "static/media/Felucia.gif": "/star-wars-map/static/media/Felucia.87923b0e66eb8fe32fd7.gif",
+    "static/media/Bespin.gif": "/star-wars-map/static/media/Bespin.aa0a42dac2070de54c5b.gif",
+    "static/media/Endor.gif": "/star-wars-map/static/media/Endor.46b4d99b27bc6e795b59.gif",
+    "static/media/Utapau.gif": "/star-wars-map/static/media/Utapau.efc3da250f9dc7228401.gif",
+    "static/media/Kashyyyk.gif": "/star-wars-map/static/media/Kashyyyk.2dc2d4ba85fc23a35067.gif",
+    "static/media/Alderaan.gif": "/star-wars-map/static/media/Alderaan.ca30579834f3da33944f.gif",
+    "static/media/Dagobah.gif": "/star-wars-map/static/media/Dagobah.0e03bb5fa0f20116fe5e.gif",
+    "static/media/Hoth.gif": "/star-wars-map/static/media/Hoth.33efb661f1f91677713b.gif",
+    "static/media/Coruscant.gif": "/star-wars-map/static/media/Coruscant.be0fd6397cbdd2604a57.gif",
+    "static/media/CatoNeimoidia.gif": "/star-wars-map/static/media/CatoNeimoidia.36971b41f080ce30f94f.gif",
+    "static/media/Kamino.gif": "/star-wars-map/static/media/Kamino.53fabea0f54dcbeae094.gif",
+    "static/media/Saleucami.gif": "/star-wars-map/static/media/Saleucami.9ec194cc068afc0fe640.gif",
+    "static/media/Mustafar.gif": "/star-wars-map/static/media/Mustafar.54ab4b75765743ce3408.gif",
+    "static/media/Geonosis.gif": "/star-wars-map/static/media/Geonosis.3f8a42b77e8905f8b2e2.gif",
+    "static/media/OrdMantell.gif": "/star-wars-map/static/media/OrdMantell.c25e7179eb4c6f90fe11.gif",
+    "static/media/Tatooine.gif": "/star-wars-map/static/media/Tatooine.78b16654ac579551c90b.gif",
+    "static/media/PolisMassa.gif": "/star-wars-map/static/media/PolisMassa.d076666a7a05d956ee6d.gif",
+    "index.html": "/star-wars-map/index.html",
+    "main.e6c13ad2.css.map": "/star-wars-map/static/css/main.e6c13ad2.css.map",
+    "main.65c537a2.js.map": "/star-wars-map/static/js/main.65c537a2.js.map",
+    "787.a10523bc.chunk.js.map": "/star-wars-map/static/js/787.a10523bc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.65c537a2.js"
+  ]
+}
