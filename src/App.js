@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
+import Navbar from './components/Navbar';
 import imgs from './imagesExport';
 
 function App() {
@@ -53,17 +54,18 @@ function App() {
     );
   } else {
     return (
-      <div className="App">
-        {state.PlanetList.map((planet) => {
-          return (
-            <img
-              src={imgs[planet.name]}
-              key={planet.id}
-              id={planet.id}
-              alt={planet.name + 'picture'}
-            />
-          );
-        })}
+      <div className="">
+        <Navbar />
+        <div className="PlanetsList">
+          {state.PlanetList.map((planet) => {
+            return (
+              <div className="pContainer" key={planet.id} id={planet.id}>
+                <img src={imgs[planet.name]} alt={planet.name + 'picture'} />
+                <div className="pName">{planet.name}</div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }

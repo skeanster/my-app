@@ -11,3 +11,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbarContainer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  width: 80%;
+  max-width: 1075px;
+  font-weight: 300;
+  grid-gap: 10px;
+  gap: 10px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: calc(20px + 2vmin);
+}
+
+.navItemsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: calc(10px + 1.5vmin);
+}
+
+.PlanetsList {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10% auto 0px auto;
+  gap: 50px;
+}
+
+.pContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
