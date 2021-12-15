@@ -7,6 +7,23 @@ function App() {
   const [state, setState] = useState({
     PlanetList: null,
   });
+  const [planetState, setPlanetState] = useState({
+    singlePName: '',
+    population: 0,
+  });
+
+  const selectPlanet = (e) => {
+    let dataPoint = state.PlanetList.find((p) => p.id === e.target.id);
+    setPlanetState({
+      singlePName: dataPoint.name,
+      population: dataPoint.population,
+    });
+    document.querySelector('.singlePContainer').classList.toggle('hide');
+  };
+
+  const hideSingle = () => {
+    document.querySelector('.singlePContainer').classList.toggle('hide');
+  };
 
   useEffect(() => {
     fetch('https://swapi-graphql.netlify.app/.netlify/functions/index', {
@@ -56,11 +73,33 @@ function App() {
     return (
       <div className="">
         <Navbar />
+        <div className="singlePContainer hide">
+          <div className="exit" onClick={hideSingle}>
+            EXIT
+          </div>
+          <div className="singlePName">{planetState.singlePName}</div>
+          <div className="population">{planetState.population}</div>
+          <img
+            src={imgs[planetState.singlePName]}
+            alt={planetState.singlePName + 'picture'}
+            className="singlePPicture"
+          />
+        </div>
         <div className="PlanetsList">
           {state.PlanetList.map((planet) => {
             return (
-              <div className="pContainer" key={planet.id} id={planet.id}>
-                <img src={imgs[planet.name]} alt={planet.name + 'picture'} />
+              <div
+                className="pContainer"
+                key={planet.id}
+                id={planet.id}
+                onClick={selectPlanet}
+              >
+                <img
+                  src={imgs[planet.name]}
+                  alt={planet.name + 'picture'}
+                  id={planet.id}
+                  className="pPicture"
+                />
                 <div className="pName">{planet.name}</div>
               </div>
             );
