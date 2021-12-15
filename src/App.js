@@ -11,6 +11,8 @@ function App() {
   const [planetState, setPlanetState] = useState({
     singlePName: '',
     population: 0,
+    appearsIn: [],
+    gravity: '',
   });
 
   const numberWithCommas = (x) => {
@@ -25,7 +27,9 @@ function App() {
     let dataPoint = state.PlanetList.find((p) => p.id === e.target.id);
     setPlanetState({
       singlePName: dataPoint.name,
+      appearsIn: dataPoint.filmConnection.films,
       population: numberWithCommas(dataPoint.population),
+      gravity: dataPoint.gravity,
     });
     document.querySelector('.singlePContainer').classList.toggle('hide');
   };
@@ -86,6 +90,17 @@ function App() {
         <div className="singlePContainer hide">
           <div className="pText">
             <div className="singlePName">{planetState.singlePName}</div>
+            <div className="appearsInContainer">
+              <div className="appearsInTitle">Appears In:</div>
+              {planetState.appearsIn.map((movie) => {
+                return (
+                  <div className="movie" key={movie.title}>
+                    {' '}
+                    -{movie.title}
+                  </div>
+                );
+              })}
+            </div>
             <div className="population">
               Population: {planetState.population}
             </div>
