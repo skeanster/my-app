@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import Navbar from './components/Navbar';
+import Loader from './components/Loader';
 import imgs from './imagesExport';
 
 function App() {
@@ -66,14 +67,15 @@ function App() {
   if (state.PlanetList === null) {
     return (
       <div>
-        <div>data not loaded</div>
+        <Navbar />
+        <Loader />
       </div>
     );
   } else {
     return (
       <div className="">
         <Navbar />
-        <div className="singlePContainer hide">
+        <div className="singlePContainer hide twinkling">
           <div className="exit" onClick={hideSingle}>
             EXIT
           </div>
