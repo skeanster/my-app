@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/star-wars-map/static/css/main.7c205972.css",
-    "main.js": "/star-wars-map/static/js/main.e5ab57a9.js",
+    "main.css": "/star-wars-map/static/css/main.31794de1.css",
+    "main.js": "/star-wars-map/static/js/main.90678634.js",
     "static/js/787.a10523bc.chunk.js": "/star-wars-map/static/js/787.a10523bc.chunk.js",
     "static/media/Naboo.gif": "/star-wars-map/static/media/Naboo.ef0a5a368046993a05a0.gif",
     "static/media/YavinIV.gif": "/star-wars-map/static/media/YavinIV.f11e42e6e4025cc66176.gif",
@@ -24,12 +24,12 @@
     "static/media/Tatooine.gif": "/star-wars-map/static/media/Tatooine.78b16654ac579551c90b.gif",
     "static/media/PolisMassa.gif": "/star-wars-map/static/media/PolisMassa.d076666a7a05d956ee6d.gif",
     "index.html": "/star-wars-map/index.html",
-    "main.7c205972.css.map": "/star-wars-map/static/css/main.7c205972.css.map",
-    "main.e5ab57a9.js.map": "/star-wars-map/static/js/main.e5ab57a9.js.map",
+    "main.31794de1.css.map": "/star-wars-map/static/css/main.31794de1.css.map",
+    "main.90678634.js.map": "/star-wars-map/static/js/main.90678634.js.map",
     "787.a10523bc.chunk.js.map": "/star-wars-map/static/js/787.a10523bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c205972.css",
-    "static/js/main.e5ab57a9.js"
+    "static/css/main.31794de1.css",
+    "static/js/main.90678634.js"
   ]
 }
