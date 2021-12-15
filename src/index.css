@@ -68,9 +68,7 @@ a {
 }
 
 .singlePContainer {
-  background-color: black;
-  background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top
-    center;
+  background: #000 url(https://image.ibb.co/mjnygo/stars.png) repeat top center;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -78,6 +76,32 @@ a {
   transition: all 0.8s ease-in-out;
   z-index: 10;
   color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.pText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.exit {
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.exit:hover {
+  background-color: white;
+  color: #000;
 }
 
 .singlePPicture {

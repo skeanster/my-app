@@ -4,19 +4,19 @@ import './loader.css';
 const Loader = () => {
   return (
     <div>
-      <div class="body">
+      <div className="body">
         <span>
           <span></span>
           <span></span>
           <span></span>
           <span></span>
         </span>
-        <div class="base">
+        <div className="base">
           <span></span>
-          <div class="face"></div>
+          <div className="face"></div>
         </div>
       </div>
-      <div class="longfazers">
+      <div className="longfazers">
         <span></span>
         <span></span>
         <span></span>

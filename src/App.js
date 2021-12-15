@@ -13,11 +13,19 @@ function App() {
     population: 0,
   });
 
+  const numberWithCommas = (x) => {
+    if (x === null) {
+      return 'Unknown';
+    } else {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+  };
+
   const selectPlanet = (e) => {
     let dataPoint = state.PlanetList.find((p) => p.id === e.target.id);
     setPlanetState({
       singlePName: dataPoint.name,
-      population: dataPoint.population,
+      population: numberWithCommas(dataPoint.population),
     });
     document.querySelector('.singlePContainer').classList.toggle('hide');
   };
@@ -75,12 +83,16 @@ function App() {
     return (
       <div className="">
         <Navbar />
-        <div className="singlePContainer hide twinkling">
-          <div className="exit" onClick={hideSingle}>
-            EXIT
+        <div className="singlePContainer hide">
+          <div className="pText">
+            <div className="singlePName">{planetState.singlePName}</div>
+            <div className="population">
+              Population: {planetState.population}
+            </div>
+            <div className="exit" onClick={hideSingle}>
+              EXIT
+            </div>
           </div>
-          <div className="singlePName">{planetState.singlePName}</div>
-          <div className="population">{planetState.population}</div>
           <img
             src={imgs[planetState.singlePName]}
             alt={planetState.singlePName + 'picture'}
