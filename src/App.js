@@ -123,12 +123,14 @@ function App() {
                 id={planet.id}
                 onClick={selectPlanet}
               >
-                <img
-                  src={imgs[planet.name]}
-                  alt={planet.name + 'picture'}
-                  id={planet.id}
-                  className="pPicture"
-                />
+                <div className="pPictureBackground">
+                  <img
+                    src={imgs[planet.name]}
+                    alt={planet.name + 'picture'}
+                    id={planet.id}
+                    className="pPicture"
+                  />
+                </div>
                 <div className="pName">{planet.name}</div>
               </div>
             );

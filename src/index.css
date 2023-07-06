@@ -158,3 +158,8 @@ a {
 .pPicture:hover {
   transform: scale(1.1);
 }
+
+.pPictureBackground {
+  height: 100px;
+  width: 100px;
+}
